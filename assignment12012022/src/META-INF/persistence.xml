@@ -2,7 +2,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
         version="2.0">
-    <persistence-unit name="com.xworkz.ticketbook">  
+    <persistence-unit name="com.xworkz.assign">  
     <provider>org.hibernate.jpa.HibernatePersistenceProvider  
     </provider>
     
@@ -15,7 +15,7 @@
    value="com.mysql.cj.jdbc.Driver"/>
    
    <property name="javax.persistence.jdbc.url" 
-   value="jdbc:mysql://localhost:3306/peechmode"/>
+   value="jdbc:mysql://localhost:3306/hibernate"/>
    
    <property name="javax.persistence.jdbc.user" 
    value="root"/>

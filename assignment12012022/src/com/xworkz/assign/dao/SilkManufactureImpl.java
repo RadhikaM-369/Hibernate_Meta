@@ -1,19 +1,17 @@
-package com.xworkz.tour.dao;
+package com.xworkz.assign.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 
-import com.xworkz.tour.entity.TouristEntity;
-import com.xworkz.tour.util.EMFUtil;
+import com.xworkz.assign.entity.SilkManufactureEntity;
+import com.xworkz.assign.util.EMFUtil;
 
-public class TouristDAOImpl implements TouristDAO{
+public class SilkManufactureImpl implements SilkManufactureInterf{
 
-	@Override
-	public void put(TouristEntity entity) {
-		
-		
-		EntityManagerFactory entityManagerFactory=EMFUtil.getEntityManagerFactory();
+	
+	public void put(SilkManufactureEntity entity) {
+EntityManagerFactory entityManagerFactory=EMFUtil.getEntityManagerFactory();
 		
 		
 		EntityManager entityManager=entityManagerFactory.createEntityManager();
@@ -22,8 +20,6 @@ public class TouristDAOImpl implements TouristDAO{
 		trans.begin();
 		entityManager.persist(entity);
 		trans.commit();
-		
-	
 		
 	}
 
